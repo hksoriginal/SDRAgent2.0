@@ -1,0 +1,1006 @@
+2026-02-22 22:36:37 - ERROR - Agents.DataQueryAgent.query_agent - Error generating SQL query: 'DataQueryAgent' object has no attribute 'api_key'
+2026-02-22 22:38:42 - ERROR - Agents.DataQueryAgent.query_agent - Error generating SQL query: 'DataQueryAgent' object has no attribute 'api_key'
+2026-02-22 22:39:32 - ERROR - Agents.DataQueryAgent.query_agent - Error generating SQL query: 'DataQueryAgent' object has no attribute 'api_key'
+2026-02-22 22:40:39 - ERROR - Agents.DataQueryAgent.query_agent - Error generating SQL query: 'DataQueryAgent' object has no attribute 'site_url'
+2026-02-22 22:48:22 - ERROR - Agents.DataQueryAgent.load_data - Error running SQL query: Parser Error: syntax error at end of input
+2026-02-22 22:52:44 - ERROR - Agents.DataQueryAgent.query_agent - Error executing SQL query: 'str' object has no attribute 'shape'
+2026-02-22 22:53:20 - ERROR - Agents.DataQueryAgent.query_agent - Error executing SQL query: 'str' object has no attribute 'get'
+2026-02-22 22:53:50 - ERROR - Agents.DataQueryAgent.query_agent - Error executing SQL query: 'str' object has no attribute 'get'
+2026-02-22 22:55:55 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at or near "Source"
+
+LINE 1: SELECT COUNT(*) FROM df WHERE `Lead Source` = 'Google'
+                                            ^
+2026-02-22 23:25:06 - ERROR - Utils.data_processor - Required column missing during filtering: ['Company']
+2026-02-22 23:25:06 - ERROR - API.main - Error while refreshing data: ['Company']
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 42, in refresh_data
+    filtered_df = data_processor.get_filter_data()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Utils/data_processor.py", line 99, in get_filter_data
+    filtered_df = filtered_df.dropna(subset=["Company"])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/frame.py", line 7789, in dropna
+    raise KeyError(np.array(subset)[check].tolist())
+KeyError: ['Company']
+2026-02-23 00:02:21 - ERROR - Utils.intent_classifier - Error in intent classification: '\n  "intent"'
+2026-02-23 00:02:59 - ERROR - Utils.intent_classifier - Error in intent classification: '\n  "intent"'
+2026-02-23 00:03:30 - ERROR - Utils.intent_classifier - Error in intent classification: '\n  "intent"'
+2026-02-23 00:05:14 - ERROR - Utils.intent_classifier - Error in intent classification: '\n  "intent"'
+2026-02-23 00:06:04 - ERROR - Utils.intent_classifier - Error in intent classification: '\n  "intent"'
+2026-02-23 00:21:45 - ERROR - API.main - Error while running LangGraph pipeline: StateGraph.__init__() missing 1 required positional argument: 'state_schema'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 93, in run_graph
+    graph = StateGraph()
+            ^^^^^^^^^^^^
+TypeError: StateGraph.__init__() missing 1 required positional argument: 'state_schema'
+2026-02-23 00:23:35 - ERROR - API.main - Error while running LangGraph pipeline: 'StateGraph' object has no attribute 'run'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 125, in run_graph
+    result = await graph.run(state)
+                   ^^^^^^^^^
+AttributeError: 'StateGraph' object has no attribute 'run'
+2026-02-23 00:28:14 - ERROR - API.main - Error while running LangGraph pipeline: Expecting ',' delimiter: line 2 column 31 (char 33)
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 97, in run_graph
+    data = await request.json()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/starlette/requests.py", line 259, in json
+    self._json = json.loads(body)
+                 ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 31 (char 33)
+2026-02-23 00:54:48 - ERROR - Agents.EmailAgent.email_extractor - Error in get_lead_email_df: 'EmailAgent' object has no attribute 'email_regex'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_extractor.py", line 63, in get_lead_email_df
+    df_filtered[email_col].apply(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/series.py", line 5084, in apply
+    ).apply()
+      ^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/apply.py", line 1520, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/apply.py", line 1578, in apply_standard
+    mapped = obj._map_values(mapper=curried)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/base.py", line 1020, in _map_values
+    return arr.map(mapper, na_action=na_action)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/arrays/base.py", line 2744, in map
+    return map_array(self, mapper, na_action=na_action)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1710, in map_array
+    return lib.map_infer(values, mapper)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 3071, in pandas._libs.lib.map_infer
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_extractor.py", line 64, in <lambda>
+    lambda x: bool(self.email_regex.match(str(x)))
+                   ^^^^^^^^^^^^^^^^
+AttributeError: 'EmailAgent' object has no attribute 'email_regex'
+2026-02-23 01:04:21 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 80, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 71, in chat_completion
+    headers = self._build_headers()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 42, in _build_headers
+    if self.site_url:
+       ^^^^^^^^^^^^^
+AttributeError: 'EmailService' object has no attribute 'site_url'
+2026-02-23 01:04:21 - ERROR - Workflow.workflow_graph - [TRACE_ID=3d434d30-921f-4e6b-9abf-254dfe91556a] ❌ Error in node: send_email | Duration: 0.03s | Error: LLM email content generation failed: 'EmailService' object has no attribute 'site_url'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 80, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 71, in chat_completion
+    headers = self._build_headers()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 42, in _build_headers
+    if self.site_url:
+       ^^^^^^^^^^^^^
+AttributeError: 'EmailService' object has no attribute 'site_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 86, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: 'EmailService' object has no attribute 'site_url'
+2026-02-23 01:04:21 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: 'EmailService' object has no attribute 'site_url'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 80, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 71, in chat_completion
+    headers = self._build_headers()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 42, in _build_headers
+    if self.site_url:
+       ^^^^^^^^^^^^^
+AttributeError: 'EmailService' object has no attribute 'site_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 86, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: 'EmailService' object has no attribute 'site_url'
+During task with name 'send_email' and id '2ffc7483-dafa-cd62-eda8-71acc1ed8953'
+2026-02-23 01:05:27 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:05:27 - ERROR - Workflow.workflow_graph - [TRACE_ID=a825ac1f-e2ad-4287-b588-5c1d604cec66] ❌ Error in node: send_email | Duration: 0.15s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 88, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:05:27 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 88, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id 'a2797977-dce6-7100-4deb-580775a76eb0'
+2026-02-23 01:06:23 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:06:23 - ERROR - Workflow.workflow_graph - [TRACE_ID=029e0957-ddbe-4b74-b7ae-1dfaf88304d3] ❌ Error in node: send_email | Duration: 4.68s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 88, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:06:23 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 82, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 88, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id 'f79d97da-8833-e759-ca52-665ad46b52b3'
+2026-02-23 01:10:08 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:10:08 - ERROR - Workflow.workflow_graph - [TRACE_ID=ac53689f-2cd2-411b-a80c-35bb7fd8c237] ❌ Error in node: send_email | Duration: 0.13s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:10:08 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id '07a54f72-f49f-3dec-13c8-e2803cbbcb13'
+2026-02-23 01:10:21 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:10:21 - ERROR - Workflow.workflow_graph - [TRACE_ID=d8dbff72-d095-4d55-afef-cc61446fde00] ❌ Error in node: send_email | Duration: 0.15s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:10:21 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": prompt}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id 'fbf223e2-8289-12e4-9915-9dc5971bd2ad'
+2026-02-23 01:11:34 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:11:34 - ERROR - Workflow.workflow_graph - [TRACE_ID=bedd4806-546f-41cb-a51d-0a2b09dc54dc] ❌ Error in node: send_email | Duration: 0.10s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:11:34 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id 'de8656d3-e786-88f5-939a-2ce694db4794'
+2026-02-23 01:12:42 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:12:42 - ERROR - Workflow.workflow_graph - [TRACE_ID=26a3ef83-3aad-4035-a5f8-2f832e82a729] ❌ Error in node: send_email | Duration: 0.10s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:12:42 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id 'c535dfb8-6d7d-c7c4-579b-6ff0f7921635'
+2026-02-23 01:17:55 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:17:55 - ERROR - Workflow.workflow_graph - [TRACE_ID=1e6bfde8-d338-45b4-9293-5cc9458b31ca] ❌ Error in node: send_email | Duration: 0.10s | Error: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 01:17:55 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 83, in generate_email_content
+    result = await self.chat_completion(messages=[{"role": "user", "content": "Say hi"}])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/llm_client.py", line 84, in chat_completion
+    response.raise_for_status()
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 89, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+During task with name 'send_email' and id '8bc3725d-2103-b3a6-ca44-f7b516c9f526'
+2026-02-23 01:19:06 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 87, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+2026-02-23 01:19:06 - ERROR - Workflow.workflow_graph - [TRACE_ID=ac774aa4-6f98-4e0f-b78c-b14635e210d6] ❌ Error in node: send_email | Duration: 3.22s | Error: LLM email content generation failed: No JSON object found in response
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 87, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 92, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: No JSON object found in response
+2026-02-23 01:19:06 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: No JSON object found in response
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 87, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 92, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: No JSON object found in response
+During task with name 'send_email' and id '13091367-7104-2dfa-9900-72c2cab5c4ea'
+2026-02-23 01:20:00 - ERROR - Agents.EmailAgent.email_service - Failed to generate email content via LLM
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 90, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+2026-02-23 01:20:00 - ERROR - Workflow.workflow_graph - [TRACE_ID=6b4a0fa1-eead-4d3a-a5fd-558b365d706d] ❌ Error in node: send_email | Duration: 1.28s | Error: LLM email content generation failed: No JSON object found in response
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 90, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 95, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: No JSON object found in response
+2026-02-23 01:20:00 - ERROR - API.main - Error while running LangGraph pipeline: LLM email content generation failed: No JSON object found in response
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 90, in generate_email_content
+    email_content = self.extract_and_validate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 75, in extract_and_validate
+    data = self._extract_json(response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Mixins/text_processor.py", line 52, in _extract_json
+    raise ValueError("No JSON object found in response")
+ValueError: No JSON object found in response
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 19, in get_email_ids
+    email_service_res = await  self.email_service.generate_email_content(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_service.py", line 95, in generate_email_content
+    raise RuntimeError(
+RuntimeError: LLM email content generation failed: No JSON object found in response
+During task with name 'send_email' and id '903eb0d3-ec3a-7ef8-4e9f-692e375c17de'
+2026-02-23 01:33:24 - ERROR - Utils.intent_classifier - Error in intent classification: 'str' object has no attribute 'get'
+2026-02-23 01:47:19 - ERROR - Workflow.workflow_graph - [TRACE_ID=81958d28-b8c6-4bd5-b65d-f601e90532be] ❌ Error in node: send_email | Duration: 0.03s | Error: name 'emails_list' is not defined
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 20, in get_email_ids
+    customer_info=str(emails_list[0]),
+                      ^^^^^^^^^^^
+NameError: name 'emails_list' is not defined
+2026-02-23 01:47:19 - ERROR - API.main - Error while running LangGraph pipeline: name 'emails_list' is not defined
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 27, in wrapper
+    result = await func(state)
+             ^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 72, in email_node
+    result = await agent.get_email_ids()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Agents/EmailAgent/email_agent.py", line 20, in get_email_ids
+    customer_info=str(emails_list[0]),
+                      ^^^^^^^^^^^
+NameError: name 'emails_list' is not defined
+During task with name 'send_email' and id '63c0b0b4-0ee4-de36-2a39-8c5dc775a2d0'
+2026-02-23 02:15:39 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 02:27:57 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at end of input
+2026-02-23 02:30:33 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at end of input
+2026-02-23 02:32:54 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 02:33:16 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
