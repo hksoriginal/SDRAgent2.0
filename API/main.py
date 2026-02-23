@@ -14,7 +14,9 @@ from langgraph.graph import StateGraph, END
 from Workflow.workflow_graph import (
     intent_classifier_node,
     data_query_node,
-    email_node
+    email_node,
+    refresh_data_node,
+    fallback_node
 )
 
 # Configure logging
@@ -85,6 +87,7 @@ class GraphState(TypedDict, total=False):
     email_result: Optional[Dict[str, Any]]
     summary: Optional[str]
     intent_meta: Optional[Dict[str, Any]]
+    message: Optional[str]
 
 
 @app.post("/run_graph")
@@ -102,11 +105,17 @@ async def run_graph(request: Request):
 
         logger.info(f"🧠 Running LangGraph pipeline for: '{user_query}'")
 
-        # --- Build Graph Dynamically --- #
+        # --- Build COMPLETE Graph (add ALL nodes + edges) --- #
         graph_builder = StateGraph(GraphState)
+
+        # Add ALL nodes
         graph_builder.add_node("intent_classifier", intent_classifier_node)
         graph_builder.add_node("data_query", data_query_node)
         graph_builder.add_node("send_email", email_node)
+        graph_builder.add_node("refresh_data_node",
+                               refresh_data_node)
+        graph_builder.add_node("fallback_response",
+                               fallback_node)
 
         graph_builder.add_conditional_edges(
             "intent_classifier",
@@ -114,22 +123,29 @@ async def run_graph(request: Request):
             {
                 "query_data": "data_query",
                 "send_email": "send_email",
+                "refresh_data": "refresh_data_node",
                 "summarize": END,
                 "greeting": END,
-                "fallback": END,
+                "fallback": "fallback_response",
             },
         )
 
         graph_builder.set_entry_point("intent_classifier")
+
+        graph_builder.add_edge("data_query", END)
+        graph_builder.add_edge("send_email", END)
+        graph_builder.add_edge("refresh_data_node", END)
+        graph_builder.add_edge("fallback_response", END)
+
         graph = graph_builder.compile()
 
         # --- Execute Graph --- #
         state = {"user_input": user_query}
-        result = await graph.ainvoke(state) 
+        result = await graph.ainvoke(state)
 
         logger.info("✅ LangGraph pipeline completed successfully.")
         return {
-            "message": "Graph executed successfully",
+            "message": result.get("message", "No message returned from agent."),
             "final_state": result,
         }
 

@@ -3333,3 +3333,1026 @@ During task with name 'send_email' and id '63c0b0b4-0ee4-de36-2a39-8c5dc775a2d0'
 2026-02-23 02:36:04 - INFO - Workflow.workflow_graph - [TRACE_ID=e4b9bfcf-347c-426b-ba61-7367a700f36c] ✅ Node completed: send_email | Duration: 17.06s
 2026-02-23 02:36:04 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
 2026-02-23 21:48:20 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 21:57:10 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 21:57:41 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 21:58:42 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 21:59:07 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:02:40 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'total leads work in unversity
+'
+2026-02-23 22:02:40 - INFO - Workflow.workflow_graph - [TRACE_ID=f87d702c-bbfa-4937-9808-427752a2250b] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:02:40 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'total leads work in unversity
+'
+2026-02-23 22:02:40 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:02:40 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:02:40 - INFO - Workflow.workflow_graph - [TRACE_ID=f87d702c-bbfa-4937-9808-427752a2250b] ✅ Node completed: intent_classifier | Duration: 0.72s
+2026-02-23 22:02:40 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:02:50 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:02:51 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'total leads work in unversity
+'
+2026-02-23 22:02:51 - INFO - Workflow.workflow_graph - [TRACE_ID=3af210b9-e787-4b01-b64b-e562b1b74ff9] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:02:51 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'total leads work in unversity
+'
+2026-02-23 22:02:51 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:02:52 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:02:52 - INFO - Workflow.workflow_graph - [TRACE_ID=3af210b9-e787-4b01-b64b-e562b1b74ff9] ✅ Node completed: intent_classifier | Duration: 0.75s
+2026-02-23 22:02:52 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:04:32 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:04:34 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'total leads work in unversity
+'
+2026-02-23 22:04:34 - INFO - Workflow.workflow_graph - [TRACE_ID=b093127a-a363-448c-a798-116976a4f0c8] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:04:34 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'total leads work in unversity
+'
+2026-02-23 22:04:34 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:04:35 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:04:35 - INFO - Workflow.workflow_graph - [TRACE_ID=b093127a-a363-448c-a798-116976a4f0c8] ✅ Node completed: intent_classifier | Duration: 0.72s
+2026-02-23 22:04:35 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:05:32 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:06:57 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:07:08 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:07:08 - INFO - Workflow.workflow_graph - [TRACE_ID=0ec66818-a8d7-43c0-94e8-86e19cc8da09] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:07:08 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:07:08 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:07:09 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:07:09 - INFO - Workflow.workflow_graph - [TRACE_ID=0ec66818-a8d7-43c0-94e8-86e19cc8da09] ✅ Node completed: intent_classifier | Duration: 0.74s
+2026-02-23 22:07:09 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:08:29 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:08:43 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:08:44 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:14:12 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:14:31 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:15:00 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:15:08 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:15:49 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hu'
+2026-02-23 22:15:49 - INFO - Workflow.workflow_graph - [TRACE_ID=0c81d2fc-a380-4f7b-9f17-e368ef078594] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:15:49 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hu'
+2026-02-23 22:15:49 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:15:50 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:15:50 - INFO - Workflow.workflow_graph - [TRACE_ID=0c81d2fc-a380-4f7b-9f17-e368ef078594] ✅ Node completed: intent_classifier | Duration: 1.14s
+2026-02-23 22:15:50 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:16:01 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:18:03 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:18:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:19:21 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:19:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:19:26 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:24:31 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:24:31 - INFO - Workflow.workflow_graph - [TRACE_ID=d8091041-94e8-413a-8a46-7eaeb2614e1b] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:24:31 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:24:31 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:24:32 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:24:32 - INFO - Workflow.workflow_graph - [TRACE_ID=d8091041-94e8-413a-8a46-7eaeb2614e1b] ✅ Node completed: intent_classifier | Duration: 0.79s
+2026-02-23 22:24:32 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:24:59 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:25:01 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:25:01 - INFO - Workflow.workflow_graph - [TRACE_ID=051601c9-e7d2-4835-9a4f-67885ae76329] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:25:01 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:25:01 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:25:25 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 23.96 seconds
+2026-02-23 22:25:25 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:25:25 - INFO - Utils.intent_classifier - ✅ Intent classified in 23.96s | Intent: fallback
+2026-02-23 22:25:25 - INFO - Workflow.workflow_graph - [TRACE_ID=051601c9-e7d2-4835-9a4f-67885ae76329] ✅ Node completed: intent_classifier | Duration: 23.96s
+2026-02-23 22:25:25 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:29:06 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:29:20 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:30:30 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:30:32 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:30:32 - INFO - Workflow.workflow_graph - [TRACE_ID=f3080cbf-cd3a-4872-a3c7-c8ce46f5bd17] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:30:32 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:30:32 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:30:36 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.41 seconds
+2026-02-23 22:30:36 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:30:36 - INFO - Utils.intent_classifier - ✅ Intent classified in 4.41s | Intent: fallback
+2026-02-23 22:30:36 - INFO - Workflow.workflow_graph - [TRACE_ID=f3080cbf-cd3a-4872-a3c7-c8ce46f5bd17] ✅ Node completed: intent_classifier | Duration: 4.41s
+2026-02-23 22:30:36 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:30:48 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:30:53 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:30:53 - INFO - Workflow.workflow_graph - [TRACE_ID=d0600efb-24f6-4be4-a821-8af76c21d5a6] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:30:53 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:30:53 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:31:02 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 8.72 seconds
+2026-02-23 22:31:02 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:31:02 - INFO - Utils.intent_classifier - ✅ Intent classified in 8.72s | Intent: fallback
+2026-02-23 22:31:02 - INFO - Workflow.workflow_graph - [TRACE_ID=d0600efb-24f6-4be4-a821-8af76c21d5a6] ✅ Node completed: intent_classifier | Duration: 8.73s
+2026-02-23 22:31:02 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:31:12 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:34:09 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:34:14 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:34:14 - INFO - Workflow.workflow_graph - [TRACE_ID=56c5ea54-3f90-40f6-a1b6-0ab480b8ab27] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:34:14 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:34:14 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:34:19 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.69 seconds
+2026-02-23 22:34:19 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:34:19 - INFO - Utils.intent_classifier - ✅ Intent classified in 4.70s | Intent: fallback
+2026-02-23 22:34:19 - INFO - Workflow.workflow_graph - [TRACE_ID=56c5ea54-3f90-40f6-a1b6-0ab480b8ab27] ✅ Node completed: intent_classifier | Duration: 4.70s
+2026-02-23 22:34:19 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:34:50 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:49:57 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:50:13 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:50:16 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 22:50:16 - INFO - Workflow.workflow_graph - [TRACE_ID=cbc18eb1-e2ec-4398-b1d7-9d7f3cd65524] ▶️ Entering node: intent_classifier
+2026-02-23 22:50:16 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 22:50:16 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:50:28 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 12.02 seconds
+2026-02-23 22:50:28 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:50:28 - INFO - Utils.intent_classifier - ✅ Intent classified in 12.02s | Intent: fallback
+2026-02-23 22:50:28 - INFO - Workflow.workflow_graph - [TRACE_ID=cbc18eb1-e2ec-4398-b1d7-9d7f3cd65524] ✅ Completed intent_classifier in 12.02s
+2026-02-23 22:50:28 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 22:51:01 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:51:07 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:51:15 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 22:51:15 - INFO - Workflow.workflow_graph - [TRACE_ID=b58073d1-ca21-4115-a7c1-259c0de2041c] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 22:51:15 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 22:51:15 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 22:51:16 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.39 seconds
+2026-02-23 22:51:16 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 22:51:16 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.39s | Intent: refresh_data
+2026-02-23 22:51:16 - INFO - Workflow.workflow_graph - [TRACE_ID=b58073d1-ca21-4115-a7c1-259c0de2041c] ✅ Node completed: intent_classifier | Duration: 1.39s
+2026-02-23 22:51:16 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '324f490b-7a98-0f2a-bbb9-c89694106836'
+2026-02-23 22:52:05 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 22:52:14 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:03:05 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'top 3 rows'
+2026-02-23 23:03:05 - INFO - Workflow.workflow_graph - [TRACE_ID=c04b1d30-428f-4f8e-a0f0-4c848aa28f97] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 23:03:05 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'top 3 rows'
+2026-02-23 23:03:05 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:03:10 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.59 seconds
+2026-02-23 23:03:10 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:03:10 - INFO - Utils.intent_classifier - ✅ Intent classified in 4.60s | Intent: query_data
+2026-02-23 23:03:10 - INFO - Workflow.workflow_graph - [TRACE_ID=c04b1d30-428f-4f8e-a0f0-4c848aa28f97] ✅ Node completed: intent_classifier | Duration: 4.60s
+2026-02-23 23:03:10 - INFO - Workflow.workflow_graph - [TRACE_ID=b05cc05b-e538-40b4-acfd-88b04628a333] ▶️ Entering node: data_query | State keys: ['user_input', 'intent', 'confidence', 'intent_meta', 'trace_id']
+2026-02-23 23:03:10 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-23 23:03:10 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:03:10 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-23 23:03:10 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: top 3 rows
+2026-02-23 23:03:10 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:03:14 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.62 seconds
+2026-02-23 23:03:14 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df LIMIT 3
+2026-02-23 23:03:14 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df LIMIT 3
+2026-02-23 23:03:14 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df LIMIT 3
+2026-02-23 23:03:14 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 3 rows returned.
+2026-02-23 23:03:14 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-23 23:03:14 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:03:16 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.98 seconds
+2026-02-23 23:03:16 - INFO - Workflow.workflow_graph - [TRACE_ID=b05cc05b-e538-40b4-acfd-88b04628a333] ✅ Node completed: data_query | Duration: 6.68s
+2026-02-23 23:03:16 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:03:48 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:04:50 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'send  mail'
+2026-02-23 23:04:50 - INFO - Workflow.workflow_graph - [TRACE_ID=bf9581ab-f626-40f1-b647-fbbf8841fdc7] ▶️ Entering node: intent_classifier | State keys: ['user_input', 'trace_id']
+2026-02-23 23:04:50 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'send  mail'
+2026-02-23 23:04:50 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:04:57 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.01 seconds
+2026-02-23 23:04:57 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 23:04:57 - INFO - Workflow.workflow_graph - [TRACE_ID=bf9581ab-f626-40f1-b647-fbbf8841fdc7] ✅ Node completed: intent_classifier | Duration: 7.01s
+2026-02-23 23:04:57 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:05:45 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:17 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:37 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:39 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:50 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:51 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:06:54 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:06:54 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:06:54 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:06:54 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:06:56 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.57 seconds
+2026-02-23 23:06:56 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:06:56 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.57s | Intent: fallback
+2026-02-23 23:06:56 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:07:06 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'send mail'
+2026-02-23 23:07:06 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:07:06 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'send mail'
+2026-02-23 23:07:06 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:07:09 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.03 seconds
+2026-02-23 23:07:09 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:07:09 - INFO - Utils.intent_classifier - ✅ Intent classified in 3.03s | Intent: send_email
+2026-02-23 23:07:09 - INFO - Workflow.workflow_graph - [EMAIL_NODE] Starting email processing...
+2026-02-23 23:07:09 - INFO - Agents.EmailAgent.email_service - Resend API initialized successfully
+2026-02-23 23:07:09 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:07:09 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-23 23:07:09 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:07:14 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 5.45 seconds
+2026-02-23 23:07:14 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:07:15 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-23 23:07:15 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-23 23:07:15 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:07:21 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 6.15 seconds
+2026-02-23 23:07:21 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:07:22 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-23 23:07:22 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-23 23:07:22 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:07:29 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.05 seconds
+2026-02-23 23:07:29 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:07:29 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-23 23:07:29 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:12:35 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:12:54 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:20:52 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:21:07 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:21:12 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:21:13 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:21:13 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:21:13 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:21:13 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:21:14 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.26 seconds
+2026-02-23 23:21:14 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:21:14 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.26s | Intent: fallback
+2026-02-23 23:21:14 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:27:32 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:27:48 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:27:51 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:28:15 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:28:20 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:28:30 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:28:30 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:28:30 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:28:30 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:28:37 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.29 seconds
+2026-02-23 23:28:37 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:28:37 - INFO - Utils.intent_classifier - ✅ Intent classified in 7.29s | Intent: fallback
+2026-02-23 23:28:37 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:29:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:29:52 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:33:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:33:24 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:33:29 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:33:29 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:33:29 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:33:29 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:33:37 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.68 seconds
+2026-02-23 23:33:37 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:33:37 - INFO - Utils.intent_classifier - ✅ Intent classified in 7.68s | Intent: fallback
+2026-02-23 23:33:37 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:34:18 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:34:34 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:34:35 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:34:35 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:34:35 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:34:35 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:34:36 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.86 seconds
+2026-02-23 23:34:36 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:34:36 - INFO - Utils.intent_classifier - ✅ Intent classified in 0.86s | Intent: fallback
+2026-02-23 23:34:36 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:35:48 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:36:16 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'top 1 row'
+2026-02-23 23:36:16 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:36:16 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'top 1 row'
+2026-02-23 23:36:16 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:36:19 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.80 seconds
+2026-02-23 23:36:19 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:36:19 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.80s | Intent: query_data
+2026-02-23 23:36:19 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-23 23:36:19 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-23 23:36:19 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:36:19 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-23 23:36:19 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: top 1 row
+2026-02-23 23:36:19 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:36:28 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 9.25 seconds
+2026-02-23 23:36:28 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df LIMIT 1
+2026-02-23 23:36:28 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df LIMIT 1
+2026-02-23 23:36:28 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df LIMIT 1
+2026-02-23 23:36:29 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 1 rows returned.
+2026-02-23 23:36:29 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-23 23:36:29 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:36:32 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.73 seconds
+2026-02-23 23:36:32 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:36:39 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:37:05 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:37:39 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'totoal leand whoi are from accouts'
+2026-02-23 23:37:39 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:37:39 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'totoal leand whoi are from accouts'
+2026-02-23 23:37:39 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:37:41 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.50 seconds
+2026-02-23 23:37:41 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:37:41 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.51s | Intent: query_data
+2026-02-23 23:37:41 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-23 23:37:41 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-23 23:37:41 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:37:41 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-23 23:37:41 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: totoal leand whoi are from accouts
+2026-02-23 23:37:41 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:37:50 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 8.96 seconds
+2026-02-23 23:37:50 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT COUNT(*) FROM df WHERE "Specialization" = 'Accounting' LIMIT 5
+2026-02-23 23:37:50 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT COUNT(*) FROM df WHERE "Specialization" = 'Accounting' LIMIT 5
+2026-02-23 23:37:50 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT COUNT(*) FROM df WHERE "Specialization" = 'Accounting' LIMIT 5
+2026-02-23 23:37:50 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 1 rows returned.
+2026-02-23 23:37:50 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-23 23:37:50 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:37:58 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 8.49 seconds
+2026-02-23 23:37:58 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:38:38 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'total leads from Uttar pradesh'
+2026-02-23 23:38:38 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:38:38 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'total leads from Uttar pradesh'
+2026-02-23 23:38:38 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:38:57 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 18.65 seconds
+2026-02-23 23:38:57 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:38:57 - INFO - Utils.intent_classifier - ✅ Intent classified in 18.65s | Intent: query_data
+2026-02-23 23:38:57 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-23 23:38:57 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-23 23:38:57 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:38:57 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-23 23:38:57 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: total leads from Uttar pradesh
+2026-02-23 23:38:57 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:39:04 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.51 seconds
+2026-02-23 23:39:04 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT COUNT(*) FROM df WHERE "State" = 'Uttar Pradesh' LIMIT
+2026-02-23 23:39:04 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT COUNT(*) FROM df WHERE "State" = 'Uttar Pradesh' LIMIT
+2026-02-23 23:39:04 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT COUNT(*) FROM df WHERE "State" = 'Uttar Pradesh' LIMIT
+2026-02-23 23:39:04 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at end of input
+2026-02-23 23:39:04 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-23 23:39:04 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:39:05 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.84 seconds
+2026-02-23 23:39:05 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:39:08 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:39:19 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:39:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:39:28 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:39:39 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:40:34 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:41:01 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:41:17 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 23:41:17 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:41:17 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 23:41:17 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:41:25 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 6.77 seconds
+2026-02-23 23:41:25 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:41:25 - INFO - Utils.intent_classifier - ✅ Intent classified in 6.78s | Intent: refresh_data
+2026-02-23 23:41:25 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '28d44778-e87b-4cc8-c748-b4c63d0eee4a'
+2026-02-23 23:41:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:41:49 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:41:55 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 23:41:55 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:41:55 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 23:41:55 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:42:03 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.91 seconds
+2026-02-23 23:42:03 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 23:42:03 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:42:15 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 23:42:15 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:42:15 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 23:42:15 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:42:22 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.40 seconds
+2026-02-23 23:42:22 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:42:22 - INFO - Utils.intent_classifier - ✅ Intent classified in 7.40s | Intent: refresh_data
+2026-02-23 23:42:22 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '523453d4-6059-9598-7a87-5b2359ba0de2'
+2026-02-23 23:43:06 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:43:09 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 23:43:09 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:43:09 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 23:43:09 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:43:19 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 9.31 seconds
+2026-02-23 23:43:19 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:43:19 - INFO - Utils.intent_classifier - ✅ Intent classified in 9.31s | Intent: refresh_data
+2026-02-23 23:43:19 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id 'd2d121a1-1ab5-9777-ef2f-9011ae1edaac'
+2026-02-23 23:43:32 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:45:37 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:45:41 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:45:58 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:46:16 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:46:21 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:46:30 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:46:44 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-23 23:46:44 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:46:44 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-23 23:46:44 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:46:46 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.22 seconds
+2026-02-23 23:46:46 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:46:46 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.22s | Intent: refresh_data
+2026-02-23 23:46:46 - INFO - Workflow.workflow_graph - [REFRESH_DATA_NODE] Starting data refresh...
+2026-02-23 23:46:46 - INFO - Utils.data_processor - Successfully loaded first CSV from Datafiles/Leads.csv
+2026-02-23 23:46:46 - INFO - Utils.data_processor - Successfully loaded second CSV from Datafiles/SampleData.csv
+2026-02-23 23:46:46 - INFO - Utils.data_processor - DataFrames merged successfully on 'Lead Number' column.
+2026-02-23 23:46:46 - INFO - Utils.data_processor - Dropped 42 columns exceeding 45% missing threshold.
+2026-02-23 23:46:46 - INFO - Utils.data_processor - Columns dropped: ['Mobile Number', 'Website', 'Time Zone', 'Job Title', 'Order Value', 'Address 1', 'Address 2', 'Zip', 'Facebook URL', 'Twitter URL', 'LinkedIn URL', 'Industry', 'Work Area', 'Course Interested', 'Keyword', 'Date', 'Next Follow Up', 'Any other Please specify', 'Chat Group', 'ecode', 'amt', 'eventname', 'Enquiry Type', 'What attracted you to consider SomeSchool ', 'Landing Page', 'Lead Type', 'Source Referrer', 'Photo Url', 'Stage Rotting Flag Status', 'Stage Rotting Flag Message', 'Stage Rotting Flag Modification Date', 'Stage Rotting Flag Additional Info', 'Stage Rotting Flag Level', 'Mailing Preferences', 'Twitter Id', 'Facebook Id', 'LinkedIn Id', 'Skype Id', 'Gtalk Id', 'Google Plus Id', 'Quality Score 01', 'Groups']
+2026-02-23 23:46:46 - INFO - Utils.data_processor - Final processed DataFrame shape: (83, 88)
+2026-02-23 23:46:46 - INFO - Utils.data_processor - DataFrame successfully saved to Datafiles/filtered_leads.csv
+2026-02-23 23:46:46 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:47:04 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:47:04 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:47:04 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:47:04 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:47:14 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 9.81 seconds
+2026-02-23 23:47:14 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:47:14 - INFO - Utils.intent_classifier - ✅ Intent classified in 9.82s | Intent: fallback
+2026-02-23 23:47:14 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-23 23:47:14 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:47:22 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.77 seconds
+2026-02-23 23:47:22 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:48:53 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:48:59 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:48:59 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:48:59 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:48:59 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:49:03 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.61 seconds
+2026-02-23 23:49:03 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:49:03 - INFO - Utils.intent_classifier - ✅ Intent classified in 3.61s | Intent: fallback
+2026-02-23 23:49:03 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-23 23:49:03 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:49:06 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.45 seconds
+2026-02-23 23:49:06 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:49:38 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:49:39 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:49:39 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:49:39 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:49:39 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:49:42 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.15 seconds
+2026-02-23 23:49:42 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 23:49:42 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-23 23:49:42 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:49:44 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.11 seconds
+2026-02-23 23:49:44 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:50:31 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:50:43 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:50:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:51:02 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:51:05 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'top 3 rowa'
+2026-02-23 23:51:05 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:51:05 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'top 3 rowa'
+2026-02-23 23:51:05 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:51:06 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.28 seconds
+2026-02-23 23:51:06 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:51:06 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.28s | Intent: query_data
+2026-02-23 23:51:06 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-23 23:51:06 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-23 23:51:06 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-23 23:51:06 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-23 23:51:06 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: top 3 rowa
+2026-02-23 23:51:06 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:51:07 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.20 seconds
+2026-02-23 23:51:07 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df LIMIT 3
+2026-02-23 23:51:07 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df LIMIT 3
+2026-02-23 23:51:07 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df LIMIT 3
+2026-02-23 23:51:07 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 3 rows returned.
+2026-02-23 23:51:07 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-23 23:51:07 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:51:09 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.50 seconds
+2026-02-23 23:51:09 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 23:53:06 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:53:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:58:14 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:59:18 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:59:48 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-23 23:59:49 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-23 23:59:49 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-23 23:59:49 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-23 23:59:49 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-23 23:59:58 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 8.90 seconds
+2026-02-23 23:59:58 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-23 23:59:58 - INFO - Utils.intent_classifier - ✅ Intent classified in 8.90s | Intent: fallback
+2026-02-23 23:59:58 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-23 23:59:58 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:00:02 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.58 seconds
+2026-02-24 00:00:02 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:00:05 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:03:12 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:03:49 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:04:01 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:04:03 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-24 00:04:03 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:04:03 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-24 00:04:03 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:04:05 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.43 seconds
+2026-02-24 00:04:05 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:04:05 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.43s | Intent: refresh_data
+2026-02-24 00:04:05 - INFO - Workflow.workflow_graph - [REFRESH_DATA_NODE] Starting data refresh...
+2026-02-24 00:04:05 - INFO - Utils.data_processor - Successfully loaded first CSV from Datafiles/Leads.csv
+2026-02-24 00:04:05 - INFO - Utils.data_processor - Successfully loaded second CSV from Datafiles/SampleData.csv
+2026-02-24 00:04:05 - INFO - Utils.data_processor - DataFrames merged successfully on 'Lead Number' column.
+2026-02-24 00:04:05 - INFO - Utils.data_processor - Dropped 42 columns exceeding 45% missing threshold.
+2026-02-24 00:04:05 - INFO - Utils.data_processor - Columns dropped: ['Mobile Number', 'Website', 'Time Zone', 'Job Title', 'Order Value', 'Address 1', 'Address 2', 'Zip', 'Facebook URL', 'Twitter URL', 'LinkedIn URL', 'Industry', 'Work Area', 'Course Interested', 'Keyword', 'Date', 'Next Follow Up', 'Any other Please specify', 'Chat Group', 'ecode', 'amt', 'eventname', 'Enquiry Type', 'What attracted you to consider SomeSchool ', 'Landing Page', 'Lead Type', 'Source Referrer', 'Photo Url', 'Stage Rotting Flag Status', 'Stage Rotting Flag Message', 'Stage Rotting Flag Modification Date', 'Stage Rotting Flag Additional Info', 'Stage Rotting Flag Level', 'Mailing Preferences', 'Twitter Id', 'Facebook Id', 'LinkedIn Id', 'Skype Id', 'Gtalk Id', 'Google Plus Id', 'Quality Score 01', 'Groups']
+2026-02-24 00:04:05 - INFO - Utils.data_processor - Final processed DataFrame shape: (83, 88)
+2026-02-24 00:04:05 - INFO - Utils.data_processor - DataFrame successfully saved to Datafiles/filtered_leads.csv
+2026-02-24 00:04:05 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:05:41 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:07:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:07:24 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:07:24 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:07:24 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:07:24 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:07:31 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 7.13 seconds
+2026-02-24 00:07:31 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:07:31 - INFO - Utils.intent_classifier - ✅ Intent classified in 7.13s | Intent: fallback
+2026-02-24 00:07:31 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:07:31 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:07:34 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.16 seconds
+2026-02-24 00:07:34 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:08:38 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:12:09 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:14:23 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:15:56 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:16:14 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:16:50 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:17:07 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:17:12 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:17:12 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:17:12 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:17:12 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:17:13 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.60 seconds
+2026-02-24 00:17:13 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:17:13 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.60s | Intent: fallback
+2026-02-24 00:17:13 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:17:13 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:17:28 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 14.71 seconds
+2026-02-24 00:17:28 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:17:59 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:23:15 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:23:21 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:23:25 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:23:25 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:23:25 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:23:25 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:23:44 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 19.11 seconds
+2026-02-24 00:23:44 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:23:44 - INFO - Utils.intent_classifier - ✅ Intent classified in 19.11s | Intent: fallback
+2026-02-24 00:23:44 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:23:44 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:23:45 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.31 seconds
+2026-02-24 00:23:45 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:24:24 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:24:30 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:24:33 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hello'
+2026-02-24 00:24:33 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:24:33 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hello'
+2026-02-24 00:24:33 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:24:36 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.01 seconds
+2026-02-24 00:24:36 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:24:36 - INFO - Utils.intent_classifier - ✅ Intent classified in 3.01s | Intent: fallback
+2026-02-24 00:24:36 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:24:36 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:24:39 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.38 seconds
+2026-02-24 00:24:39 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:25:33 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'refresh data'
+2026-02-24 00:25:33 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:25:33 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'refresh data'
+2026-02-24 00:25:33 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:25:35 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.38 seconds
+2026-02-24 00:25:35 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:25:35 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.38s | Intent: refresh_data
+2026-02-24 00:25:35 - INFO - Workflow.workflow_graph - [REFRESH_DATA_NODE] Starting data refresh...
+2026-02-24 00:25:35 - INFO - Utils.data_processor - Successfully loaded first CSV from Datafiles/Leads.csv
+2026-02-24 00:25:35 - INFO - Utils.data_processor - Successfully loaded second CSV from Datafiles/SampleData.csv
+2026-02-24 00:25:35 - INFO - Utils.data_processor - DataFrames merged successfully on 'Lead Number' column.
+2026-02-24 00:25:35 - INFO - Utils.data_processor - Dropped 42 columns exceeding 45% missing threshold.
+2026-02-24 00:25:35 - INFO - Utils.data_processor - Columns dropped: ['Mobile Number', 'Website', 'Time Zone', 'Job Title', 'Order Value', 'Address 1', 'Address 2', 'Zip', 'Facebook URL', 'Twitter URL', 'LinkedIn URL', 'Industry', 'Work Area', 'Course Interested', 'Keyword', 'Date', 'Next Follow Up', 'Any other Please specify', 'Chat Group', 'ecode', 'amt', 'eventname', 'Enquiry Type', 'What attracted you to consider SomeSchool ', 'Landing Page', 'Lead Type', 'Source Referrer', 'Photo Url', 'Stage Rotting Flag Status', 'Stage Rotting Flag Message', 'Stage Rotting Flag Modification Date', 'Stage Rotting Flag Additional Info', 'Stage Rotting Flag Level', 'Mailing Preferences', 'Twitter Id', 'Facebook Id', 'LinkedIn Id', 'Skype Id', 'Gtalk Id', 'Google Plus Id', 'Quality Score 01', 'Groups']
+2026-02-24 00:25:35 - INFO - Utils.data_processor - Final processed DataFrame shape: (83, 88)
+2026-02-24 00:25:35 - INFO - Utils.data_processor - DataFrame successfully saved to Datafiles/filtered_leads.csv
+2026-02-24 00:25:35 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:25:52 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'lead taht works in universitiey'
+2026-02-24 00:25:52 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:25:52 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'lead taht works in universitiey'
+2026-02-24 00:25:52 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:25:55 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.64 seconds
+2026-02-24 00:25:55 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:25:55 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.64s | Intent: query_data
+2026-02-24 00:25:55 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:25:55 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:25:55 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:25:55 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:25:55 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: lead taht works in universitiey
+2026-02-24 00:25:55 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:25:57 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.48 seconds
+2026-02-24 00:25:57 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:25:57 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:25:57 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:25:57 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:25:57 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:25:57 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:26:00 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.57 seconds
+2026-02-24 00:26:00 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:27:36 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:27:40 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'lead taht works in universitiey'
+2026-02-24 00:27:40 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:27:40 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'lead taht works in universitiey'
+2026-02-24 00:27:40 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:27:45 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 5.42 seconds
+2026-02-24 00:27:45 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:27:45 - INFO - Utils.intent_classifier - ✅ Intent classified in 5.43s | Intent: query_data
+2026-02-24 00:27:45 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:27:45 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:27:45 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:27:45 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:27:45 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: lead taht works in universitiey
+2026-02-24 00:27:45 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:27:46 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.90 seconds
+2026-02-24 00:27:46 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:27:46 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:27:46 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:27:46 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:27:46 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:27:46 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:27:47 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.13 seconds
+2026-02-24 00:27:47 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:28:58 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:28:59 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:29:06 - INFO - API.main - 🧠 Running LangGraph pipeline for: '
+lead taht works in universitiey'
+2026-02-24 00:29:06 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:29:06 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: '
+lead taht works in universitiey'
+2026-02-24 00:29:06 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:29:09 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.10 seconds
+2026-02-24 00:29:09 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:29:09 - INFO - Utils.intent_classifier - ✅ Intent classified in 3.10s | Intent: query_data
+2026-02-24 00:29:09 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:29:09 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:29:09 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:29:09 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:29:09 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: 
+lead taht works in universitiey
+2026-02-24 00:29:09 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:29:12 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.21 seconds
+2026-02-24 00:29:12 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:29:12 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:29:12 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:29:12 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:29:12 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:29:12 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:29:14 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.40 seconds
+2026-02-24 00:29:14 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 33, in data_query_node
+    state.update({"query_result": result, "message": result["query_result"]["summary"]})
+                                                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'a8ef0a34-7ce1-2f97-382d-b33d09980652'
+2026-02-24 00:29:40 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:29:43 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'lead taht works in universitiey'
+2026-02-24 00:29:43 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:29:43 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'lead taht works in universitiey'
+2026-02-24 00:29:43 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:29:57 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 13.86 seconds
+2026-02-24 00:29:57 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:29:57 - INFO - Utils.intent_classifier - ✅ Intent classified in 13.86s | Intent: query_data
+2026-02-24 00:29:57 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:29:57 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:29:57 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:29:57 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:29:57 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: lead taht works in universitiey
+2026-02-24 00:29:57 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:30:00 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.09 seconds
+2026-02-24 00:30:00 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:00 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:00 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:00 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:30:00 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:30:00 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:30:10 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 10.80 seconds
+2026-02-24 00:30:10 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 34, in data_query_node
+    {"query_result": result, "message": result["query_result"]["summary"]})
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'eb18fb11-61aa-ddb5-0599-55a891b35711'
+2026-02-24 00:30:23 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:30:24 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:30:26 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:30:30 - INFO - API.main - 🧠 Running LangGraph pipeline for: '
+lead taht works in universitiey'
+2026-02-24 00:30:30 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:30:30 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: '
+lead taht works in universitiey'
+2026-02-24 00:30:30 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:30:31 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.40 seconds
+2026-02-24 00:30:31 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:30:31 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.41s | Intent: query_data
+2026-02-24 00:30:31 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:30:31 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:30:31 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:30:31 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:30:31 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: 
+lead taht works in universitiey
+2026-02-24 00:30:31 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:30:37 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 5.43 seconds
+2026-02-24 00:30:37 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:37 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:37 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:30:37 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:30:37 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:30:37 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:30:39 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.24 seconds
+2026-02-24 00:30:39 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 34, in data_query_node
+    {"query_result": result, "message": result["query_result"]["summary"]})
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'd028a9f7-2078-4748-861f-b77299bdacbd'
+2026-02-24 00:31:00 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:31:02 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:31:05 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'lead taht works in universitiey'
+2026-02-24 00:31:05 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:31:05 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'lead taht works in universitiey'
+2026-02-24 00:31:05 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:31:08 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.97 seconds
+2026-02-24 00:31:08 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:31:08 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.97s | Intent: query_data
+2026-02-24 00:31:08 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:31:08 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:31:08 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:31:08 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:31:08 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: lead taht works in universitiey
+2026-02-24 00:31:08 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:31:10 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.86 seconds
+2026-02-24 00:31:10 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:31:10 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:31:10 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:31:10 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:31:10 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:31:10 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:31:12 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.89 seconds
+2026-02-24 00:31:12 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:32:22 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'from which contry 
+lead taht works in universitiey belong'
+2026-02-24 00:32:22 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:32:22 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'from which contry 
+lead taht works in universitiey belong'
+2026-02-24 00:32:22 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:32:52 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 29.40 seconds
+2026-02-24 00:32:52 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:32:52 - INFO - Utils.intent_classifier - ✅ Intent classified in 29.40s | Intent: query_data
+2026-02-24 00:32:52 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:32:52 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:32:52 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:32:52 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:32:52 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: from which contry 
+lead taht works in universitiey belong
+2026-02-24 00:32:52 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:32:55 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.63 seconds
+2026-02-24 00:32:55 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT "Country" FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:32:55 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT "Country" FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:32:55 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT "Country" FROM df WHERE "Company" LIKE '%University%' LIMIT 5
+2026-02-24 00:32:55 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 5 rows returned.
+2026-02-24 00:32:55 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:32:55 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:33:05 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 9.89 seconds
+2026-02-24 00:33:05 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:33:29 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'helllo'
+2026-02-24 00:33:29 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:33:29 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'helllo'
+2026-02-24 00:33:29 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:33:30 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.13 seconds
+2026-02-24 00:33:30 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:33:30 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.13s | Intent: fallback
+2026-02-24 00:33:30 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:33:30 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:33:32 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.76 seconds
+2026-02-24 00:33:32 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:34:00 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'send mail'
+2026-02-24 00:34:00 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:34:00 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'send mail'
+2026-02-24 00:34:00 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:34:02 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.67 seconds
+2026-02-24 00:34:02 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:34:02 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.67s | Intent: send_email
+2026-02-24 00:34:02 - INFO - Workflow.workflow_graph - [EMAIL_NODE] Starting email processing...
+2026-02-24 00:34:02 - INFO - Agents.EmailAgent.email_service - Resend API initialized successfully
+2026-02-24 00:34:02 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:34:02 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:34:02 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:34:06 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.05 seconds
+2026-02-24 00:34:06 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:34:06 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:34:06 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:34:06 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:34:09 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.35 seconds
+2026-02-24 00:34:09 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:34:10 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:34:10 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:34:10 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:34:25 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 14.79 seconds
+2026-02-24 00:34:25 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:34:25 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:34:25 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:35:26 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:35:36 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:35:38 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'send mails'
+2026-02-24 00:35:38 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:35:38 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'send mails'
+2026-02-24 00:35:38 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:35:42 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.47 seconds
+2026-02-24 00:35:42 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:35:42 - INFO - Utils.intent_classifier - ✅ Intent classified in 4.47s | Intent: send_email
+2026-02-24 00:35:42 - INFO - Workflow.workflow_graph - [EMAIL_NODE] Starting email processing...
+2026-02-24 00:35:42 - INFO - Agents.EmailAgent.email_service - Resend API initialized successfully
+2026-02-24 00:35:42 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:35:42 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:35:42 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:35:54 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 10.82 seconds
+2026-02-24 00:35:54 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:35:54 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:35:54 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:35:54 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:35:59 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 5.14 seconds
+2026-02-24 00:35:59 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:36:00 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:36:00 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:36:00 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:36:06 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 6.07 seconds
+2026-02-24 00:36:06 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:36:06 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:36:06 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:36:44 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:36:47 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'send mails'
+2026-02-24 00:36:47 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:36:47 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'send mails'
+2026-02-24 00:36:47 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:36:50 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.54 seconds
+2026-02-24 00:36:50 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:36:50 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.54s | Intent: send_email
+2026-02-24 00:36:50 - INFO - Workflow.workflow_graph - [EMAIL_NODE] Starting email processing...
+2026-02-24 00:36:50 - INFO - Agents.EmailAgent.email_service - Resend API initialized successfully
+2026-02-24 00:36:50 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:36:50 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:36:50 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:36:54 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.98 seconds
+2026-02-24 00:36:54 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:36:54 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:36:54 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:36:54 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:36:55 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.75 seconds
+2026-02-24 00:36:55 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:36:55 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:36:55 - INFO - Agents.EmailAgent.email_service - Generating email content via LLM with provided context and information.
+2026-02-24 00:36:55 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:37:17 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 21.10 seconds
+2026-02-24 00:37:17 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:37:17 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
+2026-02-24 00:37:17 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:39:46 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi how are you?'
+2026-02-24 00:39:46 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:39:46 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi how are you?'
+2026-02-24 00:39:46 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:39:56 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 10.70 seconds
+2026-02-24 00:39:56 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:39:56 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:39:56 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:39:59 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.00 seconds
+2026-02-24 00:39:59 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:40:25 - INFO - root - ✅ Logging initialized for FastAPI app.

@@ -97,9 +97,6 @@ class TextProcessor:
             return []
 
         return [s for s in strings if isinstance(s, str) and EMAIL_REGEX.match(s)]
-    
-    def get_toon(self, json:Dict[str,Any])->str:
+
+    def get_toon(self, json: Dict[str, Any]) -> str:
         return encode(json)
-        
-        
-        

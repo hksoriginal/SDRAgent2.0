@@ -1004,3 +1004,207 @@ During task with name 'send_email' and id '63c0b0b4-0ee4-de36-2a39-8c5dc775a2d0'
 2026-02-23 02:30:33 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at end of input
 2026-02-23 02:32:54 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
 2026-02-23 02:33:16 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 22:02:40 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:02:52 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:04:35 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:07:09 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:15:50 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:24:32 - ERROR - Utils.intent_classifier - Error in intent classification: Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-23 22:51:16 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '324f490b-7a98-0f2a-bbb9-c89694106836'
+2026-02-23 23:04:57 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 23:39:04 - ERROR - Agents.DataQueryAgent.load_data - Error executing SQL query: Parser Error: syntax error at end of input
+2026-02-23 23:41:25 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '28d44778-e87b-4cc8-c748-b4c63d0eee4a'
+2026-02-23 23:42:03 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-23 23:42:22 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id '523453d4-6059-9598-7a87-5b2359ba0de2'
+2026-02-23 23:43:19 - ERROR - API.main - Error while running LangGraph pipeline: 'refresh_data'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 128, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 711, in ainvoke
+    input = await step.ainvoke(input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 190, in _aroute
+    return self._finish(writer, input, result, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/graph/_branch.py", line 203, in _finish
+    r if isinstance(r, Send) else self.ends[r] for r in result
+                                  ~~~~~~~~~^^^
+KeyError: 'refresh_data'
+During task with name 'intent_classifier' and id 'd2d121a1-1ab5-9777-ef2f-9011ae1edaac'
+2026-02-23 23:49:42 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:29:14 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 33, in data_query_node
+    state.update({"query_result": result, "message": result["query_result"]["summary"]})
+                                                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'a8ef0a34-7ce1-2f97-382d-b33d09980652'
+2026-02-24 00:30:10 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 34, in data_query_node
+    {"query_result": result, "message": result["query_result"]["summary"]})
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'eb18fb11-61aa-ddb5-0599-55a891b35711'
+2026-02-24 00:30:39 - ERROR - API.main - Error while running LangGraph pipeline: 'summary'
+Traceback (most recent call last):
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/API/main.py", line 144, in run_graph
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/venv312/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Projects/Hiring_Asg/Ema/SDR_Agent/Workflow/workflow_graph.py", line 34, in data_query_node
+    {"query_result": result, "message": result["query_result"]["summary"]})
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+During task with name 'data_query' and id 'd028a9f7-2078-4748-861f-b77299bdacbd'
+2026-02-24 00:39:56 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response

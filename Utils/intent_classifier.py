@@ -15,7 +15,8 @@ Classify the user request into one of these categories:
 
 1. **query_data** — when user asks to fetch, filter, or analyze data (e.g., "Get leads from universities").
 2. **send_email** — when user wants to send or draft emails (e.g., "Email all leads from Delhi").
-3. **fallback** — when the intent doesn’t match any of the above clearly.
+3. **refresh_data** — when user wants to refresh or update the lead data (e.g., "Refresh the lead data").
+4. **fallback** — when the intent doesn’t match any of the above clearly.
 
 ## Output Format
 Return a JSON object with two keys:

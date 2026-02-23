@@ -1,105 +1,75 @@
 import time
-import uuid
 import logging
 from langgraph.graph import StateGraph, END
 from Utils.intent_classifier import IntentClassifier
+from Utils.data_processor import DataProcessor
 from Agents.DataQueryAgent.query_agent import DataQueryAgent
 from Agents.EmailAgent.email_agent import EmailAgent
+from Mixins.llm_client import OpenRouterMixin
+
 
 logger = logging.getLogger(__name__)
 
 
-# --- Helper Function: Tracing Decorator --- #
-def traced_node(node_name: str):
-    """
-    Decorator to add structured logging and execution timing to graph nodes.
-    Each node call will be logged with trace_id for correlation across services.
-    """
-    def decorator(func):
-        async def wrapper(state: dict):
-            trace_id = state.get("trace_id") or str(uuid.uuid4())
-            state["trace_id"] = trace_id
-            start_time = time.perf_counter()
-            logger.info(
-                f"[TRACE_ID={trace_id}] ▶️ Entering node: {node_name} | State keys: {list(state.keys())}"
-            )
-            try:
-                result = await func(state)
-                elapsed = time.perf_counter() - start_time
-                logger.info(
-                    f"[TRACE_ID={trace_id}] ✅ Node completed: {node_name} | Duration: {elapsed:.2f}s"
-                )
-                return result
-            except Exception as e:
-                elapsed = time.perf_counter() - start_time
-                logger.exception(
-                    f"[TRACE_ID={trace_id}] ❌ Error in node: {node_name} | Duration: {elapsed:.2f}s | Error: {e}"
-                )
-                raise
-        return wrapper
-    return decorator
-
-
-# --- Node wrapper functions --- #
-@traced_node("intent_classifier")
 async def intent_classifier_node(state: dict) -> dict:
     """Node wrapper for intent classification."""
+    logger.info("[INTENT_CLASSIFIER_NODE] Starting intent classification...")
     classifier = IntentClassifier()
     user_input = state.get("user_input", "")
     result = await classifier.classify_intent(user_input=user_input)
     state.update(
-        {"intent": result["intent"],
-            "confidence": result["confidence"], "intent_meta": result}
+        {"intent": result["intent"]}
     )
     return state
 
 
-@traced_node("data_query")
 async def data_query_node(state: dict) -> dict:
     """Node wrapper for data querying."""
+    logger.info("[DATA_QUERY_NODE] Starting data query...")
     agent = DataQueryAgent()
     user_input = state.get("user_input", "")
     result = await agent.query(user_input)
-    state.update({"query_result": result})
+    print(result.keys())
+    state.update(
+        {"query_result": result, "message": result["summary"]})
     return state
 
 
-@traced_node("send_email")
 async def email_node(state: dict) -> dict:
     """Node wrapper for sending or drafting emails."""
+    logger.info("[EMAIL_NODE] Starting email processing...")
     agent = EmailAgent()
-    user_input = state.get("user_input", "")
     result = await agent.get_email_ids()
-    state.update({"email_result": result})  
+    state.update(
+        {"email_result": result, "message": f"{len(result)} Emails has been sent successfully."})
     return state
 
 
-# --- Graph Builder --- #
-async def build_langgraph_pipeline():
-    """Builds the complete LangGraph flow with tracing logs."""
-    trace_id = str(uuid.uuid4())
-    logger.info(f"[TRACE_ID={trace_id}] ⚙️ Building LangGraph pipeline...")
-
-    graph = StateGraph(dict)  # schema can be replaced with TypedDict
-
-    # Add nodes
-    graph.add_node("intent_classifier", intent_classifier_node)
-    graph.add_node("data_query", data_query_node)
-    graph.add_node("send_email", email_node)
-
-    # Conditional flow routing
-    graph.add_conditional_edges(
-        "intent_classifier",
-        lambda state: state.get("intent", "fallback"),
-        {
-            "query_data": "data_query",
-            "send_email": "send_email",
-            "fallback": END,
-        },
+async def refresh_data_node(state: dict) -> dict:
+    logger.info("[REFRESH_DATA_NODE] Starting data refresh...")
+    data_processor = DataProcessor(
+        df1_path="Datafiles/Leads.csv",
+        df2_path="Datafiles/SampleData.csv"
     )
 
-    graph.set_entry_point("intent_classifier")
+    filtered_df = data_processor.get_filter_data(threshold=0.45)
+    data_processor.save_filtered_dataframe(
+        filtered_dataframe=filtered_df,
+        path="Datafiles/filtered_leads.csv"
+    )
+    state.update({"message": "Data refreshed successfully."})
+    return state
 
-    logger.info(
-        f"[TRACE_ID={trace_id}] ✅ LangGraph pipeline built successfully.")
-    return graph
+
+async def fallback_node(state: dict) -> dict:
+    logger.info("[FALLBACK_NODE] Executing fallback response...")
+    llm = OpenRouterMixin()
+    user_input = state.get("user_input", "")
+    result = await llm.chat_completion(
+        messages=[
+            {"role": "user", "content": f"You are a Sales Development Agent 'Harshit' at 'Ema'. Fallback response for: {user_input}"}],
+        model="meta-llama/llama-3.3-70b-instruct",
+        temperature=0.5,
+        max_tokens=50)
+    state.update({"message": result})
+    return state
