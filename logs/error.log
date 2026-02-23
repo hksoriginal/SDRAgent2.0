@@ -1208,3 +1208,5 @@ Traceback (most recent call last):
 KeyError: 'summary'
 During task with name 'data_query' and id 'd028a9f7-2078-4748-861f-b77299bdacbd'
 2026-02-24 00:39:56 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:56:46 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:58:56 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response

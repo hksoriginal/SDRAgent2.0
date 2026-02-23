@@ -4356,3 +4356,106 @@ lead taht works in universitiey belong
 2026-02-24 00:39:59 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.00 seconds
 2026-02-24 00:39:59 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
 2026-02-24 00:40:25 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:43:36 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:43:44 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:43:44 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:43:44 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:43:44 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:43:46 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.43 seconds
+2026-02-24 00:43:46 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:43:46 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.43s | Intent: fallback
+2026-02-24 00:43:46 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:43:46 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:43:53 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 6.71 seconds
+2026-02-24 00:43:53 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:45:19 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:45:19 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:45:19 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:45:19 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:45:21 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.48 seconds
+2026-02-24 00:45:21 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:45:21 - INFO - Utils.intent_classifier - ✅ Intent classified in 2.48s | Intent: fallback
+2026-02-24 00:45:21 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:45:21 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:45:51 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 28.49 seconds
+2026-02-24 00:45:51 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:47:35 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:47:51 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:48:06 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:48:13 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'time'
+2026-02-24 00:48:13 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:48:13 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'time'
+2026-02-24 00:48:13 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:48:15 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.79 seconds
+2026-02-24 00:48:15 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:48:15 - INFO - Utils.intent_classifier - ✅ Intent classified in 1.79s | Intent: fallback
+2026-02-24 00:48:15 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:48:15 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:48:17 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.28 seconds
+2026-02-24 00:48:17 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:50:34 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'good eveneing'
+2026-02-24 00:50:34 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:50:34 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'good eveneing'
+2026-02-24 00:50:34 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:50:36 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 0.78 seconds
+2026-02-24 00:50:36 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:50:36 - INFO - Utils.intent_classifier - ✅ Intent classified in 0.78s | Intent: fallback
+2026-02-24 00:50:36 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:50:36 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:50:40 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 4.05 seconds
+2026-02-24 00:50:40 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:53:36 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:54:32 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:54:41 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:54:47 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:54:54 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:55:17 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:55:22 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:56:03 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'top 2 rows'
+2026-02-24 00:56:03 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:56:03 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'top 2 rows'
+2026-02-24 00:56:03 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:56:13 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 9.61 seconds
+2026-02-24 00:56:13 - INFO - Mixins.text_processor - ✅ JSON extracted successfully
+2026-02-24 00:56:13 - INFO - Utils.intent_classifier - ✅ Intent classified in 9.62s | Intent: query_data
+2026-02-24 00:56:13 - INFO - Workflow.workflow_graph - [DATA_QUERY_NODE] Starting data query...
+2026-02-24 00:56:13 - INFO - Agents.DataQueryAgent.query_agent - Loading data from CSV...
+2026-02-24 00:56:13 - INFO - Agents.DataQueryAgent.load_data - Data loaded successfully from Datafiles/filtered_leads.csv. Shape: (83, 88)
+2026-02-24 00:56:13 - INFO - Agents.DataQueryAgent.query_agent - Data loaded successfully. Shape: (83, 88)
+2026-02-24 00:56:13 - INFO - Agents.DataQueryAgent.query_agent - Generating SQL query for user request: top 2 rows
+2026-02-24 00:56:13 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:56:15 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 1.50 seconds
+2026-02-24 00:56:15 - INFO - Agents.DataQueryAgent.query_agent - Generated SQL: SELECT * FROM df LIMIT 2
+2026-02-24 00:56:15 - INFO - Agents.DataQueryAgent.query_agent - Executing SQL query: SELECT * FROM df LIMIT 2
+2026-02-24 00:56:15 - INFO - Agents.DataQueryAgent.load_data - Executing SQL query: SELECT * FROM df LIMIT 2
+2026-02-24 00:56:15 - INFO - Agents.DataQueryAgent.load_data - SQL query executed successfully — 2 rows returned.
+2026-02-24 00:56:15 - INFO - Agents.DataQueryAgent.query_agent - Query executed successfully.
+2026-02-24 00:56:15 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:56:18 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.97 seconds
+2026-02-24 00:56:18 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:56:42 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'what was the last acitivrty for 
+top 2 rows'
+2026-02-24 00:56:42 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:56:42 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'what was the last acitivrty for 
+top 2 rows'
+2026-02-24 00:56:42 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:56:46 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.72 seconds
+2026-02-24 00:56:46 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:56:46 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:56:46 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:56:51 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 5.24 seconds
+2026-02-24 00:56:51 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:57:45 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:58:10 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:58:49 - INFO - root - ✅ Logging initialized for FastAPI app.
+2026-02-24 00:58:53 - INFO - API.main - 🧠 Running LangGraph pipeline for: 'hi'
+2026-02-24 00:58:53 - INFO - Workflow.workflow_graph - [INTENT_CLASSIFIER_NODE] Starting intent classification...
+2026-02-24 00:58:53 - INFO - Utils.intent_classifier - 🧭 Classifying intent for: 'hi'
+2026-02-24 00:58:53 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:58:56 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 2.24 seconds
+2026-02-24 00:58:56 - ERROR - Utils.intent_classifier - Error in intent classification: No JSON object found in response
+2026-02-24 00:58:56 - INFO - Workflow.workflow_graph - [FALLBACK_NODE] Executing fallback response...
+2026-02-24 00:58:56 - INFO - Mixins.llm_client - Sending request to OpenRouter model=meta-llama/llama-3.3-70b-instruct
+2026-02-24 00:58:59 - INFO - Mixins.llm_client - Received response from meta-llama/llama-3.3-70b-instruct in 3.28 seconds
+2026-02-24 00:58:59 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-24 00:59:30 - INFO - root - ✅ Logging initialized for FastAPI app.

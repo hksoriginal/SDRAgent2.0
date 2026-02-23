@@ -58,56 +58,56 @@ if prompt := st.chat_input("Ask me anything about your leads..."):
 
     # Placeholder for assistant reply
     with st.chat_message("assistant", avatar="😹"):
-        message_placeholder = st.empty()
-        message_placeholder.markdown("Thinking...")
+        with st.spinner("Thinking..."):
+            message_placeholder = st.empty()
 
-        try:
-            # Call the /run_graph endpoint
-            result = run_async_task(async_post(
-                "/run_graph", {"query": prompt}))
-            final_state = result.get("final_state", {}) or {}
+            try:
+                # Call the /run_graph endpoint
+                result = run_async_task(async_post(
+                    "/run_graph", {"query": prompt}))
+                final_state = result.get("final_state", {}) or {}
 
-            # st.json(final_state)
+                # st.json(final_state)
 
-            # Extract from final_state
-            query_result_data = final_state.get("query_result", {}) or {}
-            rows = query_result_data.get(
-                "query_result", {}).get("rows", []) or []
+                # Extract from final_state
+                query_result_data = final_state.get("query_result", {}) or {}
+                rows = query_result_data.get(
+                    "query_result", {}).get("rows", []) or []
 
-            # Prepare DataFrame if rows exist
-            df = None
-            if rows:
-                df = pd.DataFrame(rows)
-                # Prioritize important columns (Lead ID/Number first)
-                priority_cols = [
-                    c for c in df.columns if "ID" in c or "Lead Number" in c
-                ]
-                df = df[priority_cols +
-                        [c for c in df.columns if c not in priority_cols]]
+                # Prepare DataFrame if rows exist
+                df = None
+                if rows:
+                    df = pd.DataFrame(rows)
+                    # Prioritize important columns (Lead ID/Number first)
+                    priority_cols = [
+                        c for c in df.columns if "ID" in c or "Lead Number" in c
+                    ]
+                    df = df[priority_cols +
+                            [c for c in df.columns if c not in priority_cols]]
 
-            # Display assistant response
-            ai_reply = f"{result.get('message', 'No message returned from agent.')}"
-            message_placeholder.markdown(ai_reply)
+                # Display assistant response
+                ai_reply = f"{result.get('message', 'No message returned from agent.')}"
+                message_placeholder.markdown(ai_reply)
 
-            if df is not None and not df.empty:
-                st.dataframe(df, use_container_width=True)
-                st.caption(f"✅ Displayed {len(df)} records successfully.")
+                if df is not None and not df.empty:
+                    st.dataframe(df, use_container_width=True)
+                    st.caption(f"✅ Displayed {len(df)} records successfully.")
 
-            # Save assistant message
-            st.session_state.messages.append(
-                {"role": "assistant", "content": ai_reply, "data": df}
-            )
+                # Save assistant message
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": ai_reply, "data": df}
+                )
 
-        except httpx.HTTPStatusError as e:
-            error_msg = f"❌ Backend error ({e.response.status_code}): {e.response.text}"
-            message_placeholder.markdown(error_msg)
-            st.session_state.messages.append(
-                {"role": "assistant", "content": error_msg}
-            )
+            except httpx.HTTPStatusError as e:
+                error_msg = f"❌ Backend error ({e.response.status_code}): {e.response.text}"
+                message_placeholder.markdown(error_msg)
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": error_msg}
+                )
 
-        except Exception as e:
-            error_msg = f"❌ Pipeline execution failed: {e}"
-            message_placeholder.markdown(error_msg)
-            st.session_state.messages.append(
-                {"role": "assistant", "content": error_msg}
-            )
+            except Exception as e:
+                error_msg = f"❌ Pipeline execution failed: {e}"
+                message_placeholder.markdown(error_msg)
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": error_msg}
+                )

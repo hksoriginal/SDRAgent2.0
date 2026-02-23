@@ -6,6 +6,8 @@ from Utils.data_processor import DataProcessor
 from Agents.DataQueryAgent.query_agent import DataQueryAgent
 from Agents.EmailAgent.email_agent import EmailAgent
 from Mixins.llm_client import OpenRouterMixin
+from datetime import datetime
+import pytz 
 
 
 logger = logging.getLogger(__name__)
@@ -65,11 +67,40 @@ async def fallback_node(state: dict) -> dict:
     logger.info("[FALLBACK_NODE] Executing fallback response...")
     llm = OpenRouterMixin()
     user_input = state.get("user_input", "")
+
+    # 🕒 Get current time in IST (you can switch to UTC if preferred)
+    ist = pytz.timezone("Asia/Kolkata")
+    current_time = datetime.now(ist).strftime("%A, %d %B %Y | %I:%M %p %Z")
+
+    # 🧠 Refined fallback prompt
+    prompt = f"""
+You are Harshit, a professional Sales Development Representative (SDR) at Ema.
+Your role is to assist with lead engagement, email drafting, and data queries.
+
+The current date and time is {current_time}.
+
+The user has asked: "{user_input}"
+
+When generating your fallback response:
+- Be polite, concise, and relevant to the user's query.
+- If the request is unclear, acknowledge it and suggest how they can rephrase or clarify.
+- Maintain a friendly yet business-appropriate tone.
+- Keep your response under 80 words.
+"""
+
+    # 🧩 Call the LLM
     result = await llm.chat_completion(
-        messages=[
-            {"role": "user", "content": f"You are a Sales Development Agent 'Harshit' at 'Ema'. Fallback response for: {user_input}"}],
+        messages=[{"role": "user", "content": prompt.strip()}],
         model="meta-llama/llama-3.3-70b-instruct",
         temperature=0.5,
-        max_tokens=50)
-    state.update({"message": result})
+        max_tokens=80,
+    )
+
+    # ✅ Extract clean message text from result
+    try:
+        message_text = result["choices"][0]["message"]["content"].strip()
+    except (KeyError, IndexError, TypeError):
+        message_text = str(result)
+
+    state.update({"message": message_text})
     return state
