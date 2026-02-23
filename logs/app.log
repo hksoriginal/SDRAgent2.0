@@ -3332,3 +3332,4 @@ During task with name 'send_email' and id '63c0b0b4-0ee4-de36-2a39-8c5dc775a2d0'
 2026-02-23 02:36:04 - INFO - Agents.EmailAgent.email_service - ✅ Email sent successfully to ['harshitkumar454@gmail.com']
 2026-02-23 02:36:04 - INFO - Workflow.workflow_graph - [TRACE_ID=e4b9bfcf-347c-426b-ba61-7367a700f36c] ✅ Node completed: send_email | Duration: 17.06s
 2026-02-23 02:36:04 - INFO - API.main - ✅ LangGraph pipeline completed successfully.
+2026-02-23 21:48:20 - INFO - root - ✅ Logging initialized for FastAPI app.
